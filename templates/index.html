@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  RECAUDACIONES | Home 
+{% endblock %}
+
+{% block body %}
+    <!-- FORM -->
+    <div class="row">
+        <div class="col-md-5 p-5">
+            <!-- MESSAGE -->
+            {% include 'partials/message.html' %}
+
+            <!-- FORM -->
+            {% include 'partials/_taskForm.html' %}
+        </div>
+
+        <!-- recaudaciones list -->
+        <div class="col-md-7">
+            {% include 'partials/_list.html' %}
+        </div>
+    </div>
+{% endblock %}
